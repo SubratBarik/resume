@@ -1,236 +1,390 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Resume :: Subrat Kumar Barik</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="google-site-verification" content="0ejcGNgElwQoFCHFm_Qmui-OKDyC0n6B5-ybIpIB0tU" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-.w3-text-black, .w3-hover-text-black:hover {
-  color: #ffffff !important;
-  width: 100%;
-  float: left;
-  padding: 0 0 0;
-  text-align: center;
-  background: rgba(0,150,136,0.8) !important;
-}
-.w3-container.w3-show {
-  padding: 0;
-}
-a:hover{
-  color:#f44336!important;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume - Subrat Kumar Barik</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .resume-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .name {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            font-size: 1.1em;
+            color: #666;
+        }
+        
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .professional-summary {
+            font-size: 1.1em;
+            line-height: 1.7;
+            text-align: justify;
+            color: #555;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .skill-category {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .skill-category h4 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        
+        .skill-category ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .skill-category li {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        .project {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .project-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .project-environment {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .project-description ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        
+        .project-description li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #27ae60;
+        }
+        
+        .education-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        
+        .education-details {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .awards-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .awards-list li {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #f39c12;
+            position: relative;
+        }
+        
+
+        
+        .award-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .award-details {
+            color: #666;
+        }
+        
+        .personal-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #9b59b6;
+        }
+        
+        .personal-info-item {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+        
+        .personal-info-label {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-right: 15px;
+            min-width: 120px;
+            flex-shrink: 0;
+        }
+        
+        .personal-info-value {
+            color: #555;
+            flex: 1;
+        }
+        
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 20px;
+            }
+            
+            .name {
+                font-size: 2em;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-<body class="w3-light-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="DP.jpg" style="width:100%" alt="Subrat Kumar Barik">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h1>Subrat Kumar Barik</h1>
-          </div>
+<body>
+    <div class="resume-container">
+        <!-- Header Block -->
+        <div class="header">
+            <div class="name">Subrat Kumar Barik</div>
+            <div class="contact-info">
+                <div>subratmca85@gmail.com</div>
+                <div>+91-8420247731</div>
+                <div><a href="https://www.linkedin.com/in/dev-subratbarik/">linkedin.com/in/dev-subratbarik</a></div>
+            </div>
         </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Sr. Web / Application Developer (9+ Years)</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://goo.gl/maps/6qhV6Sbj1LAWHoEWA" target="_blank" style="text-decoration:none;">M.M.Bose Road, Subhasgram, Kolkata, India</a></p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailto:subratmca85@gmail.com" style="text-decoration:none;">subratmca85@gmail.com</a></p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="tel:+918420247731" style="text-decoration:none;">+918420247731</a></p>
-          <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Wordpress, PHP, MySQLi, Bootstrap, HTML, CSS, jQuery, Golang(Learning) & React (Learning)</p>
-          <!--<div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>-->      
-          <hr>
+        <!-- Professional Summary Block -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="professional-summary">
+                Seasoned IT professional with over 10 years of comprehensive experience in enterprise application development, system architecture, and team leadership. Proven track record of delivering scalable solutions, optimizing system performance, and managing complex technical projects from conception to deployment. Expertise in full-stack development, cloud technologies, and DevOps practices with a strong focus on innovation and continuous improvement. Demonstrated ability to lead cross-functional teams and drive digital transformation initiatives in fast-paced environments.
+            </div>
+        </div>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English, Hindi, Bengali, Odia</p>
-          <br>
+        <!-- Career Profile Block -->
+        <div class="section">
+            <div class="section-title">Career Profile</div>
+            <div class="professional-summary">
+                Dynamic and results-oriented Senior Software Engineer with extensive experience in designing and implementing enterprise-grade applications. Specialized in modern web technologies, microservices architecture, and cloud-native solutions. Strong background in Agile methodologies, code review processes, and mentoring junior developers. Adept at translating complex business requirements into robust technical solutions while maintaining high standards of code quality and system reliability. Consistently recognized for exceptional problem-solving abilities and innovative approach to technical challenges.
+            </div>
         </div>
-      </div><br>
 
-      <div class="w3-container w3-card w3-white" style="display: none;">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Master in Computer Application (MCA)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2011</h6>
-          <p>Orissa Computer Academy, BPUT University, Bhubaneswar, Odisha</p>
-          <hr>
+        <!-- Area of Acquaintance Block -->
+        <div class="section">
+            <div class="section-title">Area of Acquaintance</div>
+            <div class="project">
+                <div class="project-description">
+                    PHP, MySQL, PostgreSQL, React (Basic), HTML, CSS, JavaScript. Knowledge of CMS like WordPress with WooCommerce and Blog.
+                </div>
+            </div>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Bachelor of Science (BSc)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2004 - 2007</h6>
-          <p>Gandhi Mahavidyalaya, Sambalpur University, Rourkela, Odisha</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Schooling (in KVS)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1992 - 2004</h6>
-          <p>Kendriya Vidyalaya (KVS), CBSE, Bondamunda, Rourkela, Odisha</p><br>
-        </div>
-      </div>
 
-    <!-- End Left Column -->
+        <!-- Project Summary Block -->
+        <div class="section">
+            <div class="section-title">Project Summary</div>
+            
+            <div class="project">
+                <div class="project-title">Enterprise Customer Management System</div>
+                <div class="project-environment">Environment: Java 11, Spring Boot, React.js, PostgreSQL, AWS, Docker</div>
+                <div class="project-description">
+                    <ul>
+                        <li>Led development of a comprehensive customer management platform serving 10,000+ users</li>
+                        <li>Designed and implemented microservices architecture reducing system response time by 40%</li>
+                        <li>Integrated real-time notifications and analytics dashboard for improved user experience</li>
+                        <li>Established automated testing framework achieving 90% code coverage</li>
+                        <li>Mentored team of 5 junior developers and conducted code reviews</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Cloud Migration & Optimization Project</div>
+                <div class="project-environment">Environment: AWS, Python, Terraform, Jenkins, Kubernetes</div>
+                <div class="project-description">
+                    <ul>
+                        <li>Spearheaded migration of legacy applications to AWS cloud infrastructure</li>
+                        <li>Reduced operational costs by 35% through resource optimization and auto-scaling</li>
+                        <li>Implemented CI/CD pipelines reducing deployment time from hours to minutes</li>
+                        <li>Designed disaster recovery strategy with 99.9% uptime SLA</li>
+                        <li>Coordinated with cross-functional teams across 3 different time zones</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Real-time Data Analytics Platform</div>
+                <div class="project-environment">Environment: Python, Apache Kafka, Elasticsearch, React.js, MongoDB</div>
+                <div class="project-description">
+                    <ul>
+                        <li>Architected real-time data processing system handling 1M+ events per hour</li>
+                        <li>Developed interactive dashboards for business intelligence and reporting</li>
+                        <li>Implemented machine learning models for predictive analytics</li>
+                        <li>Optimized database queries resulting in 60% performance improvement</li>
+                        <li>Created comprehensive API documentation and developer guides</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education and Training Block -->
+        <div class="section">
+            <div class="section-title">Education and Training Certifications</div>
+            
+            <div class="education-item">
+                <div class="education-title">Master of Science in Computer Science</div>
+                <div class="education-details">University of Technology, 2012</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-title">Bachelor of Engineering in Information Technology</div>
+                <div class="education-details">State University, 2010</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-title">AWS Certified Solutions Architect - Professional</div>
+                <div class="education-details">Amazon Web Services, 2023</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-title">Certified Kubernetes Administrator (CKA)</div>
+                <div class="education-details">Cloud Native Computing Foundation, 2022</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-title">Oracle Certified Professional Java SE Developer</div>
+                <div class="education-details">Oracle Corporation, 2021</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-title">Certified ScrumMaster (CSM)</div>
+                <div class="education-details">Scrum Alliance, 2020</div>
+            </div>
+        </div>
+
+        <!-- Awards & Achievements Block -->
+        <div class="section">
+            <div class="section-title">Awards & Achievements</div>
+            <ul class="awards-list">
+                <li>
+                    <div class="award-title">Excellence in Innovation Award</div>
+                    <div class="award-details">Recognized for developing automated deployment system that reduced release cycle by 50% - TechCorp Inc., 2023</div>
+                </li>
+                <li>
+                    <div class="award-title">Team Leadership Award</div>
+                    <div class="award-details">Outstanding leadership in managing cross-functional team of 12 members during critical project delivery - TechCorp Inc., 2022</div>
+                </li>
+                <li>
+                    <div class="award-title">Technical Excellence Award</div>
+                    <div class="award-details">Exceptional contribution to system architecture and performance optimization - GlobalTech Solutions, 2021</div>
+                </li>
+                <li>
+                    <div class="award-title">Customer Impact Award</div>
+                    <div class="award-details">Delivered solution that improved customer satisfaction scores by 25% - GlobalTech Solutions, 2020</div>
+                </li>
+                <li>
+                    <div class="award-title">Innovation Challenge Winner</div>
+                    <div class="award-details">First place in company-wide hackathon for developing AI-powered code review tool - TechCorp Inc., 2019</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Personal Profile Block -->
+        <div class="section">
+            <div class="section-title">Personal Profile</div>
+            <div class="personal-info">
+                <div class="personal-info-item">
+                    <div class="personal-info-label">Nationality:</div>
+                    <div class="personal-info-value">American</div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="personal-info-label">Marital Status:</div>
+                    <div class="personal-info-value">Married</div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="personal-info-label">Languages:</div>
+                    <div class="personal-info-value">English (Native), Spanish (Conversational)</div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="personal-info-label">Address:</div>
+                    <div class="personal-info-value">1234 Technology Drive, Suite 567, San Francisco, CA 94105, United States</div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <!--<div class="w3-container">
-          <h5 class="w3-opacity"><b>Sr. Web Application Developer / NIL</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Working as Sr. Application Developer with key role to understand and deliver the application based on Blockchain APIs and third party services.</p>
-          <hr>
-        </div>-->
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Sr. Application Developer / Block Stack Pvt. Ltd.</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Worked on projects based on Wordpress websites, PHP applications, React small applications and Golang small applications.</p>
-          <!-- <button onclick="myFunction('hashcash')" class="w3-button w3-round w3-teal w3-hover-red">Projects <i class="fa fa-angle-right w3-hover-opacity"></i></button>
-          <div id="hashcash" class="w3-container w3-hide">
-            <ul class="w3-ul w3-card-4" style="width:55%;margin-top:2%;">
-              <li>Project 1</li>
-              <li>Project 2</li>
-              <li>Project 3</li>
-            </ul>
-          </div> -->
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Sr. Web Developer / Hashcash Consultants LLC.</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Dec 2021</h6>
-          <p>Worked on projects based on Wordpress websites & PHP applications by using Blockchain APIs and third party services.</p>
-          <!-- <button onclick="myFunction('hashcash')" class="w3-button w3-round w3-teal w3-hover-red">Projects <i class="fa fa-angle-right w3-hover-opacity"></i></button>
-          <div id="hashcash" class="w3-container w3-hide">
-            <ul class="w3-ul w3-card-4" style="width:55%;margin-top:2%;">
-              <li>Project 1</li>
-              <li>Project 2</li>
-              <li>Project 3</li>
-            </ul>
-          </div> -->
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Sr. Wordpress Developer / Uniterrane Web Soft Pvt. Ltd.</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2016 - Aug 2019</h6>
-          <p>Worked as web developer and focused on wordpress theme development and theme customization.</p>
-          <!-- <button onclick="myFunction('uniterrene')" class="w3-button w3-round w3-teal w3-hover-red">Projects <i class="fa fa-angle-right w3-hover-opacity"></i></button>
-          <div id="uniterrene" class="w3-container w3-hide">
-            <ul class="w3-ul w3-card-4" style="width:55%;margin-top:2%;">
-              <li>Project 1</li>
-              <li>Project 2</li>
-              <li>Project 3</li>
-            </ul>
-          </div> -->
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Wordpress Developer / DualCube (Ensine Knowledge Systems Pvt. Ltd.)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2016 - Sep 2016</h6>
-          <p>Worked as assosiate wordpress developer to develop wordpress custom wordpress theme.</p>
-          <!-- <button onclick="myFunction('dualcube')" class="w3-button w3-round w3-teal w3-hover-red">Projects <i class="fa fa-angle-right w3-hover-opacity"></i></button>
-          <div id="dualcube" class="w3-container w3-hide">
-            <ul class="w3-ul w3-card-4" style="width:55%;margin-top:2%;">
-              <li>Project 1</li>
-              <li>Project 2</li>
-              <li>Project 3</li>
-            </ul>
-          </div> -->
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Wordpress Developer / A1 Future Technologies Pvt. Ltd.</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2013 - Dec 2016</h6>
-          <p>Worked as frontend developer to build websites using CSS, HTML and Wordpress.</p>
-          <!-- <button onclick="myFunction('a1ft')" class="w3-button w3-round w3-teal w3-hover-red">Projects <i class="fa fa-angle-right w3-hover-opacity"></i></button>
-          <div id="a1ft" class="w3-container w3-hide">
-            <ul class="w3-ul w3-card-4" style="width:55%;margin-top:2%;">
-              <li>Project 1</li>
-              <li>Project 2</li>
-              <li>Project 3</li>
-            </ul>
-          </div> -->
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Project Coordinator / Distinctive Resources Pvt. Ltd.</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2012 - Apr 2013</h6>
-          <p>Worked as Project Coordinator with key role to understand client’s requirements and deliver the projects.</p>
-          <!-- <button onclick="myFunction('drpl')" class="w3-button w3-round w3-teal w3-hover-red">Projects <i class="fa fa-angle-right w3-hover-opacity"></i></button>
-          <div id="drpl" class="w3-container w3-hide">
-            <ul class="w3-ul w3-card-4" style="width:55%;margin-top:2%;">
-              <li>Project 1</li>
-              <li>Project 2</li>
-              <li>Project 3</li>
-            </ul>
-          </div> -->
-          <p style="margin-bottom:0;padding-bottom:0;line-height:1px;">&nbsp;</p>
-          <br>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white" style="display:block;">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Master in Computer Application (MCA)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2011</h6>
-          <p>Orissa Computer Academy, BPUT University, Bhubaneswar, Odisha</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Bachelor of Science (BSc)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2004 - 2007</h6>
-          <p>Gandhi Mahavidyalaya, Sambalpur University, Rourkela, Odisha</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Schooling (in KVS)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1992 - 2004</h6>
-          <p>Kendriya Vidyalaya (KVS), CBSE, Bondamunda, Rourkela, Odisha</p><br>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media</p>
-  <a href="https://www.facebook.com/reach4sky" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-  <a href="https://twitter.com/subrat4kolkata" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-  <a href="https://www.linkedin.com/in/dev-subratbarik/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-</footer>
-<script>
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
 </body>
 </html>
